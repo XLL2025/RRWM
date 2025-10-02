@@ -1,0 +1,31 @@
+
+Call:
+lm(formula = feeling_lf ~ aboriginal_id + SEX + MARSTAT, data = gss_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-8.4879 -0.5512  0.2037  1.3766  2.6995 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    8.015076   0.123178  65.069  < 2e-16 ***
+aboriginal_id  0.250696   0.058521   4.284 1.85e-05 ***
+SEX            0.072144   0.024966   2.890  0.00386 ** 
+MARSTAT       -0.172895   0.005961 -29.004  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.597 on 16515 degrees of freedom
+Multiple R-squared:  0.05061,	Adjusted R-squared:  0.05044 
+F-statistic: 293.5 on 3 and 16515 DF,  p-value: < 2.2e-16
+
+Analysis of Variance Table
+
+Response: feeling_lf
+                 Df Sum Sq Mean Sq  F value    Pr(>F)    
+aboriginal_id     1     81   80.71  31.6619 1.865e-08 ***
+SEX               1     19   19.36   7.5961  0.005856 ** 
+MARSTAT           1   2144 2144.27 841.2100 < 2.2e-16 ***
+Residuals     16515  42097    2.55                       
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
